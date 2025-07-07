@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  },
+  "scripts": {
+  "watch:css": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+  "serve": "browser-sync start --server src --files 'src/index.html' 'src/output.css' --reload-delay 100 --watch"
+},
+"devDependencies": {
+    "browser-sync": "^2.29.3"
+  }
+}

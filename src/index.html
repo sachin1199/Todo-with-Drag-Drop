@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+
+    <title>Todo List</title>
+  </head>
+  <body id="page" class="bg-white text-black transition-colors duration-300">
+    <header>  
+      
+          </header>
+    <!--  -->
+    <main>
+      <div id="container" class="max-w-3xl mx-auto mt-10 p-8 bg-white rounded-2xl shadow-lg space-y-8 border border-gray-200">
+        
+        <!-- Task Input Section -->
+        <div class="flex flex-wrap justify-center gap-4" id="inputGroup">
+          <input type="text" placeholder="Enter your task" class="border border-gray-300 px-4 py-2 rounded-lg w-full sm:w-auto" />
+          <button id="add" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg transition">Add</button>
+          <button id="search" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg transition">Search</button>
+        </div>
+    
+        <!-- Task List Section -->
+        <div id="tasks">
+          <ul id="task" class="space-y-4"></ul>
+        </div>
+    
+        <!-- Total Tasks Footer -->
+       
+      </div>
+    </main>
+    
+      <!--  -->
+    <footer>
+      <div class="w-full flex justify-center mt-5" >
+        <span id="totalTasks" class="bg-amber-300">ToTal Task : 0</span>
+      </div>
+      <div id="searchCard">
+
+      </div>
+
+
+    </footer>
+    <script src="./../script.js"></script>
+  </body>
+</html>
