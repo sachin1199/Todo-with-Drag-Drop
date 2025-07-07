@@ -332,8 +332,8 @@ const localStorageSave = () => {
 
 // retreiing from the Local storage
 const loadFromStorage = () => {
-  const data = JSON.parse(localStorage.getItem("Todo"));
-  taskList = data;
+    const data = JSON.parse(localStorage.getItem("Todo"));
+   taskList=data || []
 };
 
 // creating the search functinality
