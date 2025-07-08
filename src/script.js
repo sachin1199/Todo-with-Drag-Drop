@@ -57,7 +57,7 @@ add.addEventListener("click", () => {
 const rendor = () => {
   // to show the remainig tasks
   const totalTaskShow = document.querySelector("#totalTasks");
-  const totalTask = taskList.length;
+  let totalTask = taskList.length;
   totalTaskShow.textContent = `ToTal Task remaining :${totalTask}`;
   const container = document.querySelector("#task");
 
@@ -174,6 +174,10 @@ const rendor = () => {
       
       update.addEventListener('dblclick', () => {
           add.innerText = `Add`;
+          const input = document.querySelector("input");
+          input.value = ` `;
+
+
       })
 
     //
@@ -227,20 +231,25 @@ const rendor = () => {
               span.style.textDecoration = 'line-through';
               update.style.textDecoration = 'line-through';
               deletee.style.textDecoration = "line-through";
+              totalTaskShow.textContent = `ToTal Task remaining :${--totalTask}`;
+              localStorageSave()
               
               
           }
           else {
             span.style.textDecoration = "none";
             update.style.textDecoration = "none";
-            deletee.style.textDecoration = "none";
+              deletee.style.textDecoration = "none";
+              totalTaskShow.textContent = `ToTal Task remaining :${++totalTask}`;
+              localStorageSave();
               
           }
 
           
       })
 
-      
+
+    //   
 
 
       //
